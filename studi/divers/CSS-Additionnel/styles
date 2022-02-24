@@ -1,0 +1,254 @@
+    /* Header / Height */
+
+.title-logo-wrapper {
+    height: 100px;
+}
+
+
+/* Header / Left logo size */
+
+.navbar .navbar-header .navbar-brand img {
+    max-height: 80px;
+}
+
+
+/* Header / Right logo size */
+
+.wp-block-image img {
+    height: auto;
+    max-height: 400%;
+}
+
+
+/*Header Background /opacity */
+
+.header-filter {
+    background: #4f6cc9;
+    opacity: 0.2;
+}
+
+
+/* Menu */
+
+#menu-menu {
+    margin-left: 40%;
+    margin-top: -7%;
+}
+
+#menu-menu a:hover,
+#menu-menu a:active,
+a {
+    color: #4f6cc9;
+}
+
+
+/* Active link */
+
+a,
+.navbar .dropdown-menu li:hover>a,
+.navbar .dropdown-menu li:focus>a,
+.navbar .dropdown-menu li:active>a,
+.navbar .navbar-nav>li .dropdown-menu li:hover>a,
+body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a,
+body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a:hover,
+body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a:focus,
+a:hover,
+.card-blog a.moretag:hover,
+.card-blog a.more-link:hover,
+.widget a:hover,
+.has-text-color.has-accent-color,
+p.has-text-color a footer.footer.footer-black {
+    color: #4f6cc9;
+    font-weight: bold;
+}
+
+
+/* Search Button */
+
+.wp-block-search__button {
+    background-color: #5b7ed3;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+
+.wp-block-search__button:hover {
+    background-color: #83a1db;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+
+
+/* Form customized */
+
+
+/* Old Form 
+ * input[type="submit"]:not(.search-submit){
+	background-color:#4f6cc9;
+}
+.wpcf7-not-valid-tip{
+	color:#4f6cc9;
+}
+.wpcf7 form.invalid .wpcf7-response-output{
+	border-color:#4f6cc9;
+	color:#4f6cc9;
+}*/
+
+div.wpforms-container .wpforms-form button[type=submit].wpforms-submit {
+    color: white;
+    background-color: #4f6cc9;
+    border-radius: 7px
+}
+
+div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover {
+    background-color: #9c27b0;
+}
+
+.wpforms-confirmation-container-full {
+    background: #4f6cc9;
+    border: 1px solid #4f6cc9;
+}
+
+.wpforms-confirmation-container-full {
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+    color: #4f6cc9;
+}
+
+
+/* Footer */
+
+footer.footer.footer-black {
+    background: #4f6cc9;
+    color: #fff;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    /* Header Title */
+    .hestia-title {
+        padding-top: 10%
+    }
+    /* Global Menu */
+    #menu-menu {
+        padding-top: 8%;
+        margin-left: 30%;
+    }
+    /* Toggle Button on */
+    .navbar button.navbar-toggle,
+    .navbar button.navbar-toggle:hover {
+        color: white;
+        background-color: #4f6cc9;
+        z-index: 900;
+        height: 42px;
+        width: 42px;
+        border-radius: 25px;
+    }
+    /* Toggle Button off */
+    navbar button.navbar-toggle,
+    .navbar button.navbar-toggle {
+        color: #ddd;
+        z-index: 900;
+    }
+    /* Background */
+    .navbar.navbar-fixed-top .navbar-collapse {
+        top: -70px;
+        z-index: 800;
+        background: #4f6cc9;
+        color: white;
+    }
+    /* Menu part */
+    #main-navigation {
+        overflow: hidden;
+        height: 480px;
+        padding-top: 5%;
+    }
+    /* Search part */
+    .hestia-nav-search {
+        display: block;
+        width: 40%;
+        margin-left: 2%;
+        margin-top: 15%
+    }
+    .hestia-toggle-search,
+    .hestia-toggle-search::before {
+        display: none;
+    }
+    .form-control,
+    .form-group .form-control,
+    .woocommerce form .form-row input.input-text,
+    .woocommerce form .form-row textarea {
+        color: white;
+    }
+    .search-form:not(.media-toolbar-primary) input[type=submit],
+    .buttonDisabled:active {
+        background-color: #5b7ed3;
+        box-shadow: none;
+        border-radius: 25px;
+    }
+    .hestia-toggle-search svg {
+        display: none;
+    }
+    /* Menu items part */
+    #menu-menu li a {
+        margin-top: 10px;
+        color: white;
+        display: block;
+        width: 40%;
+        padding-left: 8%;
+    }
+    #menu-menu li a:hover {
+        color: white;
+        background-color: #4f6cc9;
+    }
+}
+
+
+/* --- end --- */
+
+@media only screen and (max-width: 640px) {
+    /* For old mobile app view */
+    /* Menu part */
+    #main-navigation {
+        height: 600px;
+    }
+    /* Global Menu */
+    #menu-menu {
+        padding-top: 8%;
+        margin-left: 10%;
+    }
+    /* Menu items part */
+    #menu-menu li a {
+        margin-top: 10px;
+        color: white;
+        display: block;
+        width: 80%;
+        padding-left: 18%;
+    }
+    /* Search part */
+    .hestia-nav-search {
+        display: block;
+        width: 80%;
+        margin-left: 2%;
+        margin-top: 25%
+    }
+}
+
+
+}
+/* --- end --- */
+@media only screen and (min-width: 770px) {
+    /* Background */
+    
+    .navbar.navbar-fixed-top .navbar-collapse {
+        z-index: 1;
+        background: #fff;
+        color: #4f6cc9;
+    }
